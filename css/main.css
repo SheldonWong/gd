@@ -8,20 +8,24 @@ body{
 		width:100%;
 }
 
+ul,ol{
+	margin: 0;
+	padding: 0;
+}
 .header{
-	width:100%;
-	height:70px;
+	width:1228px;
+	height:90px;
 	border: 1px solid red;
 	background-color: #3689B3;
-	margin:0 auto;
+	margin:-2px auto;
 }
 
 .wrapper{
-	width:80%;
+	width:1228px;
 	margin:0 auto;
-
 }
 .logo{
+	padding-left: 10px;
 	float: left;
 
 }
@@ -34,38 +38,80 @@ body{
 	margin:0px;
 }
 .nav  li{
-	width:100px;
+	width:120px;
 	float: left;
 	list-style: none;
 	text-align: center;
-	line-height: 70px;
+	line-height: 90px;
 	display: block;
-	
 }
 
 .nav  li a{
-	width:100px;
-	line-height: 70px;
+	width:120px;
+	line-height: 90px;
 	text-decoration:none;
 	color: white;
 	font-size: 20px;
 	font-weight: 10;
-
+	display: block;
 }
 
 .nav  li a:hover{
-	width:100px;
-	line-height: 70px;
+	width:120px;
+	line-height: 90px;
 	background-color: #EAAF12;
 	display: block;
+	
 }
 .nav ul li a:active{
-	width:100px;
-	line-height:70px;
+	width:120px;
+	line-height:90px;
 	background-color: #EAAF12;
 	
 }
 
 .clear{
 	clear: both;
+}
+
+
+/*slider*/
+#container { width: 1226px; height: 450px; border: 1px solid #333; overflow: hidden; position: relative;margin:0 auto;}
+#list { width: 8582px; height: 450px; position: absolute; z-index: 1;}
+#list img { float: left;width:1226px;height:450px;}
+#buttons { position: absolute; height: 10px; width: 100px; z-index: 2; bottom: 20px; left: 250px;}
+#buttons span { cursor: pointer; float: left; border: 1px solid #fff; width: 10px; height: 10px; border-radius: 50%; background: #333; margin-right: 5px;}
+#buttons .on {  background: orangered;}
+.arrow { cursor: pointer; display: none; line-height: 39px; text-align: center; font-size: 36px; font-weight: bold; width: 40px; height: 40px;  position: absolute; z-index: 2; top: 180px; background-color: RGBA(0,0,0,.3); color: #fff;}
+.arrow:hover { background-color: RGBA(0,0,0,.7);}
+#container:hover .arrow { display: block;}
+#prev { left: 20px;}
+#next { right: 20px;}
+
+/*main.box*/
+.newsbox{
+	width:380px;
+	float: left;
+	margin:50px 44px 0px 0px;
+}
+
+.newsbox .title{
+	text-align: left;
+	border-bottom: 3px solid #F71957;
+	margin-bottom: 8px;
+	padding-bottom: 8px;
+	font-size: 18px;
+	color: #F71957;
+	font-weight: bold;
+}
+li{
+	list-style: outside none none;
+}
+.newsbox li a{
+	text-decoration: none;
+}
+.newsbox li a,span{
+	color: #000;
+	font-size: 14px;
+	line-height: 24px;
 }
